@@ -1,5 +1,8 @@
 import React from 'react'
+import BackButton from './components/BackButton'
 import Loading from './components/Loading'
+import SingleTodo from './components/SingleTodo'
+import TodoItem from './components/TodoItem'
 import Todos from './components/Todos'
 
 class App extends React.Component {
@@ -61,9 +64,22 @@ class App extends React.Component {
       .then((data) => this.setState({singleTodo: data}))
     }
 
+    const clearSingleTodo = () => {
+      this.setState({singleTodo: null})
+    }
+
     if(this.state.loading) {
       return (
         <Loading loadingMessage={this.state.loadingMessage}/>
+      )
+    }
+
+    if(this.state.singleTodo) {
+      return (
+        <>
+        <SingleTodo singleTodo={this.state.singleTodo.title}/>
+        <BackButton clearSingleTodo={clearSingleTodo}/>
+        </>
       )
     }
     

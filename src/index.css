@@ -6,10 +6,15 @@
 }
 
 .todoItem {
+  display: flex;
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 4px dotted red;
+  align-items: center;
+  justify-content: center;
 }
 
 .todoItem:hover {
   cursor: pointer;
+  font-weight: normal;
+  transform: scale(1.07);
 }

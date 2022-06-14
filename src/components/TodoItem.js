@@ -1,10 +1,11 @@
 import React from 'react'
+import SingleTodo from './SingleTodo'
 
 class TodoItem extends React.Component {
     render() {
         
         const handleSetSingleTodo = (e) => {
-            this.props.setSingleTodo(e) 
+            this.props.setSingleTodo(e)
         }
 
         return(
@@ -13,4 +14,4 @@ class TodoItem extends React.Component {
     }
 }
 
-export default TodoItem
+export default TodoItem;
