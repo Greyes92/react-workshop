@@ -10,8 +10,6 @@ import WelcomePage from './components/WelcomePage'
 
 class App extends React.Component {
 
-
-
   constructor(props) {
     super(props)
     this.state = {
@@ -24,36 +22,13 @@ class App extends React.Component {
     }
   }
   
-//   componentDidMount() {
-
-//     if (this.props.singleTodo.userId) {
-//         fetch(`https://jsonplaceholder.typicode.com/users/${this.props.singleTodo.userId}`)
-//             .then((res) => res.json())
-//             .then((data) => this.setState({ userInfo: data }))
-//     }
-// }
-
 componentDidMount() {
       fetch(`https://jsonplaceholder.typicode.com/users/`)
           .then((res) => res.json())
           .then((data) => this.setState({ users: data, loading:false }))
 }          
 
-  
-
-  // componentDidMount() {
-  //   if(this.state.user) {
-  //   fetch('https://jsonplaceholder.typicode.com/todos/')
-  //   .then((response) => response.json())
-  //   .then((data) => this.setState({todos: data, loading: false}))
-  //   }
-  // }
-
-
-
   render() {
-
-    
 
     const setTodos = (e) => {
       fetch(`https://jsonplaceholder.typicode.com/users/${e.target.id}/todos`)
