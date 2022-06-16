@@ -9,6 +9,7 @@ class BackButton extends React.Component {
 
     return (
       <button onClick={handleClearSingleTodo}>Back</button>
+      // <button onClick={this.props.clearSingleTodo}>Back</button>
     )
   }
 }

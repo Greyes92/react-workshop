@@ -1,14 +1,21 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .loading {
   font-size: 3rem;
   color: red;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Pacifico', cursive;
   font-weight: bold;
 }
 
 .todoItem {
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom: 4px dotted red;
+  font-family: 'Pangolin', cursive;
+  font-size: 40px;
+  border-bottom: 3px solid red;
   align-items: center;
   justify-content: center;
 }
@@ -17,4 +24,235 @@
   cursor: pointer;
   font-weight: normal;
   transform: scale(1.07);
+}
+
+.singletodo{
+  display: flex;
+  font-family: 'Pangolin', cursive;
+  font-size: 50px;
+  color: white;
+  padding: 25px;
+  background-color: red;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.75);
+}
+
+.userId {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-family: 'Pacifico', cursive;
+}
+
+
+.singletodo:hover{
+  transform: scale(1.1);
+}
+
+.todoListHeader button {
+  display: flex;
+  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+  height: 50px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  border: transparent;
+  background-color: white;
+  border-radius: 999px;
+  
+}
+
+button {
+  display: flex;
+  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+  height: 50px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  border: transparent;
+  background-color: white;
+  border-radius: 999px;
+  animation: floating 3s ease-in-out infinite;
+  
+}
+
+button:hover {
+  background-color: red;
+  transform: scale(1.1);
+  color: white;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+h1 {
+  justify-content: center;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  margin: 20px;
+}
+
+.todoListHeader{
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  font-size: 60px;
+  padding: 0;
+  margin: 7px;
+  text-shadow: 3px 5px 4px red;
+}
+
+.todoListTitle {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todoListHeader button {
+  position: sticky;
+  display: flex;
+  flex-direction: right;
+  right: 0;
+}
+
+div.todoListHeader{
+  position: sticky;
+}
+
+div.todoCounterContainer {
+  position: sticky;
+}
+
+.todoItemHeader{
+  height: 100px;
+  font-size: 60px;
+  padding: 0;
+  margin: 7px;
+  text-shadow: 3px 5px 4px red;
+  border-bottom: 7px solid red;
+}
+
+.todoCounterContainer {
+  position: sticky;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 7px solid red;
+  margin-top: -10px;
+  margin-bottom: 0;
+  font-family: 'Pacifico', cursive;
+  font-size: 17px;
+  height: 65px;
+}
+
+.todoCounter{
+  padding: 0px 5px;
+  padding-left: 1px;
+  font-size: 35px;
+  font-family: 'Creepster', cursive;
+  color: red;
+  margin: 0px 10px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcomePageHeader {
+  height: 100px;
+  font-size: 60px;
+  padding: 0;
+  margin: 7px;
+  text-shadow: 3px 5px 4px red;
+  border-bottom: 7px solid red;
+}
+
+.welcomePage h3 {
+  display: flex;
+  font-family: 'Pangolin', cursive;
+  font-size: 20px;
+  color: white;
+  padding: 25px;
+  background-color: red;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.welcomePage h3:hover {
+  transform: scale(1.05);
+  color: red;
+  background-color: white;
+}
+
+.selectUserMessage {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  background-color: red;
+  width: 500px;
+  position: relative;
+  box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.75);
+}
+
+.userInfo h1 {
+  font-size: 35px;
+  color: white;
+}
+
+button.backToTodos {
+position: relative;
+align-items: center;
+text-align: center;
+align-content: center;
+margin-bottom: 20px;
+}
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 12px); }
+  100%   { transform: translate(0, -0px); }   
 }

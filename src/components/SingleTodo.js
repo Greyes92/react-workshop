@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-import BackButton from './BackButton';
+// import BackButton from "./BackButton"
 
-class SingleTodo extends Component {
+class SingleTodo extends React.Component {
   render() {
+    console.log(this.props.singleTodo.title)
     return (
      <>
-          <h2>{this.props.singleTodo}</h2>
-      </>
+        <h1 className='todoItemHeader'>Todo List Item: #{Array.prototype.indexOf(this.props.singleTodo.id)}</h1>
+        <h2 className='singletodo'>{this.props.singleTodo.title}</h2>
+        <h3 className='userId'>User ID: {this.props.singleTodo.userId}</h3>
+        {/* <BackButton clearSingleTodo={clearSingleTodo} /> */}
+     </>
     )
   }
 }
