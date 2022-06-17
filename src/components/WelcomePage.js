@@ -13,7 +13,7 @@ export default class WelcomePage extends Component {
           <h1 className='welcomePageHeader'>Welcome To Todo List</h1>
           <h2 className='selectUserMessage'>Please select your user profile to continue.</h2>
           {this.props.currentState.users.map((users) => (
-               <h3 id={users.id} onClick={handleSetTodos}>{users.name}</h3>
+               <h3 key={users.id} id={users.id} onClick={handleSetTodos}>{users.name}</h3>
           // <UserPost 
           //    key={users.id}
           //    profilePic={post.data.profilePic}

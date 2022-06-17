@@ -1,3 +1,8 @@
+# Todo List Practice
+
+Simple to do list practice using the JSON placeholder API and React.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
